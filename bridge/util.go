@@ -24,7 +24,7 @@ func combineTags(tagParts ...string) []string {
 	tags := make([]string, 0)
 	for _, element := range tagParts {
 		if element != "" {
-			tags = append(tags, strings.Split(element, ",")...)
+			tags = append(tags, strings.Split(element, tagDelimiter)...)
 		}
 	}
 	return tags
