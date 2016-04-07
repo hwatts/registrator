@@ -20,11 +20,11 @@ func mapDefault(m map[string]string, key, default_ string) string {
 	return v
 }
 
-func combineTags(tagParts ...string) []string {
+func combineTags(delimiter string, tagParts ...string) []string {
 	tags := make([]string, 0)
 	for _, element := range tagParts {
 		if element != "" {
-			tags = append(tags, strings.Split(element, tagDelimiter)...)
+			tags = append(tags, strings.Split(element, delimiter)...)
 		}
 	}
 	return tags

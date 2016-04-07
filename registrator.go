@@ -104,6 +104,7 @@ func main() {
 		RefreshInterval: *refreshInterval,
 		DeregisterCheck: *deregister,
 		Cleanup:         *cleanup,
+		TagDelimiter:    *tagDelimiter,
 	})
 
 	assert(err)

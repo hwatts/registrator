@@ -27,6 +27,7 @@ type Config struct {
 	RefreshInterval int
 	DeregisterCheck string
 	Cleanup         bool
+	TagDelimiter    string
 }
 
 type Service struct {
